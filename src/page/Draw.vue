@@ -48,7 +48,7 @@ const cdStore = useCdStore()
 watch(step, () => {
     switch (step.value) {
         case 1: {
-            message.value = '那我开始了哦'
+            message.value = '那我开始画喽！'
             break
         }
         case 2: {
@@ -100,7 +100,7 @@ watch(step, () => {
             break
         }
         case 13:{
-            message.value = '圣诞祝福!';
+            message.value = '圣诞快乐logo!';
             break
         }
         case 14:{
@@ -108,7 +108,7 @@ watch(step, () => {
             break
         }
         case 15:{
-            message.value = '完成,music!';
+            message.value = '完成,来点music!';
             cdStore.$patch({
                 cdShow:true,
                 isPlay:true

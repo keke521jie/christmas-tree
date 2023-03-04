@@ -1,24 +1,22 @@
 <template>
     <div class="home">
         <div class="mask" v-if="showMask" ref="mask">
-            <p v-if="showText >= 1" class="title animate__animated animate__fadeInTopLeft">Christmas Day 到了</p>
-            <p v-if="showText >= 2" class="main animate__animated animate__fadeInTopRight">我看别人都给自己画 <span style="color: pink;">tree</span> </p>
-            <p v-if="showText >= 3" class="main animate__animated animate__fadeInBottomLeft">自己画给自己有什么意思</p>
-            <p v-if="showText >= 4" class="main animate__animated animate__fadeInBottomRight">是要感动自己吗?</p>
-            <p v-if="showText >= 5" class="main animate__animated animate__fadeInTopLeft">我不给自己画</p>
-            <p v-if="showText >= 6" class="main animate__animated animate__fadeInTopRight">我给你 <span style="color: skyblue;">draw</span> </p>
-            <p v-if="showText >= 7" class="main animate__animated animate__fadeInBottomLeft">也不知道我这技术怎么样</p>
-            <p v-if="showText >= 8" class="main animate__animated animate__fadeInBottomRight">学了这么久前端</p>
-            <p v-if="showText >= 9" class="main animate__animated animate__fadeInTopLeft" style="font-size: .3rem; color: #fff;">现在</p>
-            <p v-if="showText >= 10" class="main animate__animated animate__fadeInTopRight">见证我的设计 <span style="color: purple;">and</span> 技术</p>
-            <p v-if="showText >= 11" class="main animate__animated animate__fadeInBottomLeft">希望不会很失望！</p>
-            <div v-if="showText >= 12" class="btn animate__animated animate__rollIn" @click="start">let's start</div>
+            <p v-if="showText >= 1" class="title"><span style="color:red">ChristmasDay</span> 要到了</p>
+            <p v-if="showText >= 2" class="main">我看别人都给自己画 <span style="color: pink;">tree</span> </p>
+            <p v-if="showText >= 3" class="main">我也跟个风</p>
+            <p v-if="showText >= 4" class="main">代码写一棵</p>
+            <p v-if="showText >= 6" class="main">也不知道我这技术怎么样</p>
+            <p v-if="showText >= 7" class="main">学了这么久前端</p>
+            <p v-if="showText >= 8" class="main" style="font-size: .3rem; color: #fff;">现在</p>
+            <p v-if="showText >= 9" class="main">见证我的设计 <span style="color: purple;">and</span> 技术</p>
+            <p v-if="showText >= 10" class="main">希望不会很难看！</p>
+            <div v-if="showText >= 12" class="btn" @click="start">let's start</div>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref, onMounted,nextTick } from 'vue';
+import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter()
@@ -49,14 +47,13 @@ function start(): void {
 
 <style lang="less">
 .home {
-    width: 100vw;
-    height: 100vh;
+    width: 3.75rem;
+    height: 6.67rem;
     background-image: url(../assets/img/tree.jpg);
-    background-size: 90vw;
+    background-size: 3.35rem;
     background-position: 80%;
     background-repeat: no-repeat;
     background-color: #f6f6f6;
-
     .mask {
         width: 3.75rem;
         height: 6.67rem;
@@ -76,13 +73,15 @@ function start(): void {
         }
 
         .title {
-            font-size: .35rem;
+            font-size: .30rem;
+            margin-bottom: .2rem;
             margin-bottom: .2rem;
         }
 
         .main {
             font-size: .2rem;
             line-height: .35rem;
+            margin-bottom: .1rem;
         }
 
         .btn {

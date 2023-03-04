@@ -36,6 +36,7 @@ onMounted(()=>{
     width: 3.75rem;
     height: 6.67rem;
     background-image: url(../assets/img/bj.jpg);
+    background-size: 3.75rem 6.67rem;
     position: relative;
 
     .mask {
@@ -50,12 +51,13 @@ onMounted(()=>{
 
         .photo{
             width: 100%;
-            height: 2.7rem;
+            height: 2.5rem;
             overflow: hidden;
-            border-radius: .2rem;
+            margin: 0 auto;
             img{
                 margin: auto;
-                height: 2.7rem;
+                height: 2.45rem;
+                border-radius: .2rem;
                 animation: showTree 1s;
             }
         }
