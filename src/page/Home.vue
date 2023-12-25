@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <div class="mask" v-if="showMask" ref="mask">
-            <p v-if="showText >= 1" class="title"><span style="color:red">ChristmasDay</span> 要到了</p>
+            <p v-if="showText >= 1" class="title"><span style="color:red">ChristmasDay</span> 到了</p>
             <p v-if="showText >= 2" class="main">我看别人都给自己画 <span style="color: pink;">tree</span> </p>
             <p v-if="showText >= 3" class="main">我也跟个风</p>
             <p v-if="showText >= 4" class="main">代码写一棵</p>
