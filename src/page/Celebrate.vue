@@ -5,10 +5,11 @@
             <p style="color:#c300e0;font-size: .4rem;">will</p>
             <p style="color:#ff0087;font-size: .4rem;">let you fulfill your wish</p>
             <p style="color:pink;font-size: .7rem;">Give you</p>
-            <div class="photo">
-                <img src="../assets/img/p1.jpg" v-if="showP===1" alt="">
+            <div class="photo" style="font-size: .8rem;">
+                <!-- <img src="../assets/img/p1.jpg" v-if="showP===1" alt="">
                 <img src="../assets/img/p2.jpg" v-if="showP===2" alt="">
-                <img src="../assets/img/p3.jpg" v-if="showP===3" alt="">
+                <img src="../assets/img/p3.jpg" v-if="showP===3" alt=""> -->
+                Merry Christmas
             </div>
         </div>
     </div>
